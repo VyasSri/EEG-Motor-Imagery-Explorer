@@ -10,7 +10,7 @@ from pathlib import Path
 DATA_DIR = Path(__file__).parent / "data"
 DATA_DIR.mkdir(exist_ok=True)
 
-BASE_URL = "https://media.githubusercontent.com/media/bregydoc/bcidatasetIV2a/master"
+BASE_URL = "https://media.githubusercontent.com/media/VyasSri/EEG-Motor-Imagery-Explorer/main/eeg-motor-imagery-explorer/backend/data"
 
 FILES = [f"A0{i}{s}.npz" for i in range(1, 10) for s in ("T", "E")]
 

@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 inspect_npz.py)",
+      "Bash(python3 -c ' *)",
+      "Bash(/opt/anaconda3/bin/python3 -c ' *)",
+      "Bash(/opt/anaconda3/bin/python3 *)"
+    ]
+  }
+}

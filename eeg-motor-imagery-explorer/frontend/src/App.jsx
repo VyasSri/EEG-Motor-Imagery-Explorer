@@ -5,7 +5,7 @@ import TFMap from "./pages/TFMap.jsx";
 import ClassifierDashboard from "./pages/ClassifierDashboard.jsx";
 import FoundationPanel from "./pages/FoundationPanel.jsx";
 
-const API = "/api";
+const API = import.meta.env.DEV ? "/api" : "https://eeg-motor-imagery-explorer.onrender.com";
 
 const NAV_ITEMS = [
   { to: "/",           label: "Data Explorer" },

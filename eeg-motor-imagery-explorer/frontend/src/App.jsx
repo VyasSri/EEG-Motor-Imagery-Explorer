@@ -3,7 +3,6 @@ import { Routes, Route, NavLink, useLocation } from "react-router-dom";
 import DataExplorer from "./pages/DataExplorer.jsx";
 import TFMap from "./pages/TFMap.jsx";
 import ClassifierDashboard from "./pages/ClassifierDashboard.jsx";
-import FoundationPanel from "./pages/FoundationPanel.jsx";
 
 const API = import.meta.env.DEV ? "/api" : "https://eeg-motor-imagery-explorer.onrender.com";
 
@@ -11,7 +10,6 @@ const NAV_ITEMS = [
   { to: "/",           label: "Data Explorer" },
   { to: "/tfmap",      label: "TF Map"        },
   { to: "/classifier", label: "Classifier"    },
-  { to: "/foundation", label: "Foundation"    },
 ];
 
 export default function App() {
@@ -125,7 +123,6 @@ export default function App() {
           <Route path="/"           element={<DataExplorer subject={selectedSubject} session={selectedSession} api={API} />} />
           <Route path="/tfmap"      element={<TFMap        subject={selectedSubject} session={selectedSession} api={API} />} />
           <Route path="/classifier" element={<ClassifierDashboard subject={selectedSubject} api={API} />} />
-          <Route path="/foundation" element={<FoundationPanel />} />
         </Routes>
       </main>
     </div>
